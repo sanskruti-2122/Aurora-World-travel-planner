@@ -66,34 +66,7 @@ border-radius:35px;
 
 }
 
-/* Button */
 
-.donate-btn{
-
-padding:18px 42px;
-
-border-radius:50px;
-
-background:
-
-linear-gradient(
-135deg,
-#3FC7C3,
-#1D4E6B
-);
-
-box-shadow:
-
-0 0 25px rgba(63,199,195,.3);
-}
-.donate-btn:hover{
-
-transform:translateY(-4px);
-
-box-shadow:
-
-0 0 35px rgba(63,199,195,.45);
-}
 .media-frame{
     position: relative;
     overflow: visible;
@@ -170,37 +143,17 @@ box-shadow:
     border-radius: 20px;
     display: block;
 }
-.large img{
 
-    height:650px;
 
-    width:100%;
-
-    object-fit:cover;
-
-    border-radius:28px;
-}
-.charity .tourism-media{
-
-flex:1.3;
-
-}
-
-.charity .tourism-content{
-
-flex:.9;
-
-}
-.section-heading,
-.charity-heading{
+.section-heading
+{
 
     text-align:center;
 
     margin-bottom:70px;
 }
 
-.section-heading h1,
-.charity-heading h1{
+.section-heading h1{
 
     font-size:52px;
 
@@ -212,8 +165,7 @@ flex:.9;
 
     position:relative;
 }
-.section-heading h1::after,
-.charity-heading h1::after{
+.section-heading h1::after{
 
 content:"";
 
@@ -236,33 +188,7 @@ transparent
 
 border-radius:20px;
 }
-.charity{
 
-padding:70px;
-
-border-radius:35px;
-
-background:
-
-linear-gradient(
-135deg,
-#082233,
-#1D4E6B
-);
-
-color:white;
-}
-.charity h2{
-
-color:white;
-
-}
-
-.charity p{
-
-color:#EAFBFF;
-
-}
 .media-frame::before{
 
 content:"";
@@ -369,4 +295,480 @@ z-index:-1;
 
     }
 
+}
+/* ===========================
+   Tree Plantation Section
+=========================== */
+
+.tree-section{
+
+    width:100%;
+    min-height:100vh;
+
+    background-size:cover;
+    background-position:center;
+
+    position:relative;
+
+    display:flex;
+    align-items:center;
+
+    margin-top:60px;
+
+}
+
+.tree-overlay{
+
+    width:100%;
+    min-height:100vh;
+
+    background:linear-gradient(
+        90deg,
+        rgba(8,24,35,.88) 0%,
+        rgba(8,24,35,.72) 35%,
+        rgba(8,24,35,.20) 100%
+    );
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    padding:90px 8%;
+
+}
+
+/* Small Heading */
+
+.tree-tag{
+
+    color:#6EF2DA;
+
+    font-size:18px;
+
+    letter-spacing:3px;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+}
+
+/* Main Heading */
+
+.tree-overlay h1{
+
+    font-family:"Playfair Display",serif;
+
+    font-size:88px;
+
+    line-height:1;
+
+    color:white;
+
+    margin-bottom:25px;
+
+}
+
+.tree-overlay h1 span{
+
+    color:#55F3D0;
+
+    text-shadow:0 0 18px rgba(85,243,208,.45);
+
+}
+
+/* Subtitle */
+
+.tree-overlay h3{
+
+    color:white;
+
+    font-size:36px;
+
+    line-height:1.4;
+
+    font-weight:500;
+
+    margin-bottom:30px;
+
+}
+
+/* Paragraph */
+
+.tree-overlay p{
+
+    width:620px;
+    max-width:95%;
+
+    color:#E8E8E8;
+
+    font-size:22px;
+
+    line-height:1.9;
+
+    margin-bottom:45px;
+
+}
+
+/* Button */
+
+.tree-btn{
+
+    width:280px;
+
+    height:70px;
+
+    border:none;
+
+    border-radius:60px;
+
+    background:linear-gradient(135deg,#3FC7C3,#1D4E6B);
+
+    color:white;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    box-shadow:0 0 25px rgba(63,199,195,.45);
+
+}
+
+.tree-btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 0 40px rgba(63,199,195,.8);
+
+}
+
+/* Statistics */
+
+.tree-stats{
+
+    margin-top:90px;
+
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+.stat-card{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(111,255,234,.25);
+
+    border-radius:25px;
+
+    padding:30px;
+
+    text-align:center;
+
+    transition:.35s;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#6EF2DA;
+
+    box-shadow:0 0 30px rgba(63,199,195,.35);
+
+}
+
+.stat-card h2{
+
+    color:#6EF2DA;
+
+    font-size:42px;
+
+    margin-bottom:10px;
+
+}
+
+.stat-card span{
+
+    color:white;
+
+    font-size:18px;
+
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.tree-overlay h1{
+
+    font-size:58px;
+
+}
+
+.tree-overlay h3{
+
+    font-size:28px;
+
+}
+
+.tree-overlay p{
+
+    font-size:18px;
+
+}
+
+.tree-stats{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:700px){
+
+.tree-stats{
+
+    grid-template-columns:1fr;
+
+}
+
+.tree-overlay{
+
+    text-align:center;
+    align-items:center;
+
+}
+
+.tree-btn{
+
+    width:100%;
+
+    max-width:320px;
+
+}
+
+}
+.charity-heading{
+    text-align:center;
+    margin-bottom:55px;
+}
+
+.heading-icon{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    color:#46d7c5;
+    font-size:38px;
+    margin-bottom:18px;
+}
+
+.heading-icon .line{
+    width:70px;
+    height:2px;
+    background:#7beedf;
+}
+
+.charity-heading h1{
+    font-family:"Playfair Display",serif;
+    font-size:70px;
+    font-weight:700;
+    color:#0d2434;
+    line-height:1.1;
+}
+
+.charity-heading h1 span{
+    color:#24c8b3;
+}
+
+.charity-heading p{
+    margin-top:18px;
+    font-size:22px;
+    color:#5f7382;
+}
+
+.heading-divider{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:18px;
+    margin-top:22px;
+    color:#7beedf;
+    font-size:18px;
+}
+
+.heading-divider span{
+    width:90px;
+    height:2px;
+    background:#7beedf;
+}
+
+.charity-tag{
+
+    display:inline-block;
+
+    padding:10px 22px;
+
+    border-radius:40px;
+
+    background:rgba(63,199,195,.12);
+
+    color:#22b8b2;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    margin-bottom:20px;
+}
+
+
+
+
+.charity-frame{
+    max-width:1450px;
+    margin:auto;
+    padding:8px;
+    border-radius:35px;
+    position:relative;
+}
+
+.tree-section{
+    position:relative;
+    min-height:760px;
+    background-size:cover;
+    background-position:center;
+    border-radius:30px;
+    overflow:hidden;
+
+    border:3px solid #86fff1;
+
+    box-shadow:
+        0 0 8px rgba(134,255,241,.7),
+        0 0 18px rgba(134,255,241,.55),
+        0 0 35px rgba(134,255,241,.4),
+        0 18px 45px rgba(0,0,0,.18);
+}
+.charity-frame::before,
+.charity-frame::after{
+    content:"✦";
+    position:absolute;
+    font-size:28px;
+    color:#7ef5e5;
+    text-shadow:0 0 15px rgba(126,245,229,.8);
+}
+
+.charity-frame::before{
+    top:-12px;
+    left:-12px;
+}
+
+.charity-frame::after{
+    bottom:-12px;
+    right:-12px;
+}
+.charity-image{
+
+    width:100%;
+
+    height:650px;
+
+    object-fit:cover;
+
+    display:block;
+
+    border-radius:28px;
+
+    transition:.5s;
+}
+
+.charity-image:hover{
+
+    transform:scale(1.02);
+}
+.charity-frame .leaf1,
+.charity-frame .leaf2{
+
+    position:absolute;
+
+    color:#8EF7E5;
+
+    font-size:34px;
+
+    animation:floatLeaf 5s ease-in-out infinite;
+}
+
+.leaf1{
+
+    top:40px;
+    right:35px;
+}
+
+.leaf2{
+
+    bottom:35px;
+    left:35px;
+}
+
+@keyframes floatLeaf{
+
+    0%,100%{
+
+        transform:translateY(0);
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+    }
+}
+.tree-section{
+    animation:borderGlow 3s ease-in-out infinite;
+}
+
+@keyframes borderGlow{
+
+    0%{
+        box-shadow:
+        0 0 8px #8ffcf2,
+        0 0 18px #8ffcf2,
+        0 0 35px rgba(143,252,242,.35);
+    }
+
+    50%{
+        box-shadow:
+        0 0 16px #8ffcf2,
+        0 0 30px #8ffcf2,
+        0 0 55px rgba(143,252,242,.55);
+    }
+
+    100%{
+        box-shadow:
+        0 0 8px #8ffcf2,
+        0 0 18px #8ffcf2,
+        0 0 35px rgba(143,252,242,.35);
+    }
+
+}
+.leaf-icon{
+    color:#7beedf;      /* Same color as the lines */
+    font-size:42px;
 }

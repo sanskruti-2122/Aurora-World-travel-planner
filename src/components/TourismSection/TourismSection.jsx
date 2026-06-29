@@ -3,7 +3,7 @@ import "./TourismSection.css";
 import tourismVideo1 from "../../assets/images/videos/tourismVideo1.mp4";
 import tourismVideo2 from "../../assets/images/videos/tourismVideo2.mp4";
 import charity from "../../assets/images/charity.png";
-
+import { PiPlantFill } from "react-icons/pi";
 function TourismSection() {
     return (
         <section className="tourism">
@@ -78,46 +78,98 @@ function TourismSection() {
 
 </div>
 
-            {/* Charity Heading */}
-            <div className="charity-heading">
-                <h1>Travel & Charity</h1>
-                <p>
-                    Make every journey meaningful by supporting people, wildlife,
-                    and the environment.
-                </p>
-            </div>
+           {/* Charity Heading */}
+<div className="charity-heading">
 
-            {/* Charity Section */}
-            <div className="tourism-row charity">
+    <div className="heading-icon">
+        <span className="line"></span>
+        <PiPlantFill className="leaf-icon" />
+        <span className="line"></span>
+    </div>
 
-                <div className="tourism-image large">
-                    <img src={charity} alt="Charity" />
-                     <span className="star star1">✦</span>
-<span className="star star2">✦</span>
-<span className="star star3">✦</span>
+    <h1>
+        Plant Trees,
+        <span> Create Futures</span>
+    </h1>
 
+    <p>
+        Every tree planted is a step towards a greener tomorrow.
+    </p>
+
+    <div className="heading-divider">
+        <span></span>
+        ◆
+        <span></span>
+    </div>
+
+</div>
+
+{/* Charity Image Frame */}
+<div className="charity-frame">
+
+    <section
+        className="tree-section"
+        style={{ backgroundImage: `url(${charity})` }}
+    >
+
+        <div className="tree-overlay">
+
+            <span className="tree-tag">
+                🌱 TREE PLANTATION INITIATIVE
+            </span>
+
+            <h1>
+                Travel with
+                <br />
+                <span>Purpose</span>
+            </h1>
+
+            <h3>
+                Plant Trees. Restore Nature.
+                <br />
+                Build a Greener Tomorrow.
+            </h3>
+
+            <p>
+                Every journey with Aurora World can create a positive impact.
+                Join our Tree Plantation Initiative and help restore forests,
+                improve biodiversity, reduce carbon emissions, and leave behind
+                a healthier planet for future generations.
+            </p>
+
+            <button className="tree-btn">
+                🌿 Join the Initiative
+            </button>
+
+            <div className="tree-stats">
+
+                <div className="stat-card">
+                    <h2>25K+</h2>
+                    <span>Trees Planted</span>
                 </div>
 
-                <div className="tourism-content">
+                <div className="stat-card">
+                    <h2>12K+</h2>
+                    <span>Volunteers</span>
+                </div>
 
-                    <h2>Travel With a Purpose</h2>
+                <div className="stat-card">
+                    <h2>350+</h2>
+                    <span>Forests Restored</span>
+                </div>
 
-                    <p>
-                        Aurora World believes that travel can make a positive
-                        impact. Support local communities, protect wildlife,
-                        preserve cultural heritage, and contribute to meaningful
-                        charity initiatives while exploring beautiful
-                        destinations around the world.
-                    </p>
-
-                    <button className="donate-btn">
-                        Learn More
-                    </button>
-
+                <div className="stat-card">
+                    <h2>15+</h2>
+                    <span>Communities Helped</span>
                 </div>
 
             </div>
 
+        </div>
+
+    </section>
+
+</div>
         </section>
     );
 }
