@@ -19,3 +19,9 @@ body {
   font-family: "Open Sans", sans-serif;
   color: var(--heading);
 }
+html,
+body,
+#root{
+    width:100%;
+    overflow-x:hidden;
+}

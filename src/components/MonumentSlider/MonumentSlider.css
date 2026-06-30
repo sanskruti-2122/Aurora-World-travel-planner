@@ -86,13 +86,13 @@
    Swiper
 =================================== */
 
-.swiper{
+.monument-section.swiper{
 
     padding-bottom:70px;
 
 }
 
-.swiper-slide{
+.monument-section.swiper-slide{
 
     display:flex;
 
@@ -224,8 +224,8 @@
    Swiper Navigation
 =================================== */
 
-.swiper-button-prev,
-.swiper-button-next{
+.monument-section .swiper-button-next,
+.monument-section .swiper-button-prev{
 
     width:58px;
 
@@ -265,7 +265,7 @@
 
 }
 
-.swiper-pagination-bullet{
+.monument-section .swiper-pagination-bullet{
 
     width:12px;
 
@@ -277,7 +277,7 @@
 
 }
 
-.swiper-pagination-bullet-active{
+.monument-section .swiper-pagination-bullet-active{
 
     width:34px;
 
@@ -326,15 +326,12 @@
 
     }
 
-    .monument-card{
-
-        width:100%;
-
-        max-width:320px;
-
-        height:420px;
-
-    }
+   .monument-card{
+    width:100%;
+    max-width:300px;
+    height:450px;
+    margin:0 auto;
+}
 
 }
 
@@ -418,5 +415,26 @@ opacity:1;
 transform:scale(1.5);
 
 }
+
+}
+
+.monument-section .swiper{
+    width:100%;
+    overflow:visible;
+}
+
+.monument-section .swiper-wrapper{
+    align-items:stretch;
+}
+
+.monument-section .swiper-slide{
+    box-sizing:border-box;
+}
+@media (max-width:768px){
+
+    .swiper-button-next,
+    .swiper-button-prev{
+        display:none;
+    }
 
 }

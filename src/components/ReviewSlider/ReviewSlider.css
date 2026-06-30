@@ -7,9 +7,9 @@
     width:100%;
 
 
-    padding:10px 8% 100px;
+    
 
-padding:70px 8% 100px;
+padding:70px 100px;
 
     background:
         radial-gradient(circle at top left,
@@ -24,7 +24,7 @@ padding:70px 8% 100px;
 
     position:relative;
 
-    overflow:hidden;
+    overflow-x:hidden;
 
 
 }
@@ -59,13 +59,13 @@ padding:70px 8% 100px;
    Swiper
 =========================== */
 
-.swiper{
+.review-section .swiper{
 
     padding-bottom:70px;
   overflow: visible !important;
 }
 
-.swiper-slide{
+.review-section .swiper-slide{
 
     display:flex;
 
@@ -79,29 +79,21 @@ padding:70px 8% 100px;
 =========================== */
 
 .review-card{
+    width:100%;
+    max-width:360px;
+    margin:0 auto;
 
     background:rgba(255,255,255,.72);
-
     backdrop-filter:blur(18px);
-
     border:1px solid rgba(183,255,242,.8);
-
     border-radius:28px;
-
     padding:35px 28px;
-
     text-align:center;
-
-    transition:.4s;
-
     position:relative;
-
     overflow:hidden;
-
+    transition:.4s;
     box-shadow:
-
         0 12px 30px rgba(29,78,107,.08);
-
 }
 
 .review-card:hover{
@@ -221,8 +213,8 @@ padding:70px 8% 100px;
    Navigation Buttons
 =========================== */
 
-.swiper-button-next,
-.swiper-button-prev{
+.review-section .swiper-button-next,
+.review-section .swiper-button-prev{
 
     width:52px;
 
@@ -265,7 +257,7 @@ padding:70px 8% 100px;
    Pagination Dots
 =========================== */
 
-.swiper-pagination-bullet{
+.review-section .swiper-pagination-bullet{
 
     width:12px;
 
@@ -277,7 +269,7 @@ padding:70px 8% 100px;
 
 }
 
-.swiper-pagination-bullet-active{
+.review-section .swiper-pagination-bullet-active{
 
     width:34px;
 
@@ -376,5 +368,33 @@ padding:70px 8% 100px;
     opacity:.15;
 
     font-family:"Playfair Display",serif;
+
+}.swiper-slide{
+    display:flex;
+    justify-content:center;
+    align-items:stretch;
+}
+
+.review-section .swiper{
+    width:100%;
+    overflow:hidden;
+}
+
+.review-section .swiper-wrapper{
+    align-items:stretch;
+}
+
+.review-section .swiper-slide{
+    display:flex;
+    justify-content:center;
+    align-items:stretch;
+    box-sizing:border-box;
+}
+@media (max-width:768px){
+
+    .swiper-button-next,
+    .swiper-button-prev{
+        display:none;
+    }
 
 }

@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./Navbar.css";
 import { FaBars } from "react-icons/fa";
 import logo from "../../assets/images/logo.png"; // Your logo
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -26,9 +27,9 @@ function Navbar() {
 
       <ul className="nav-links">
 
-        <li><a href="#">Home</a></li>
+        <li><Link to="/">Home</Link></li>
 
-        <li><a href="#">About</a></li>
+        <li><Link to="/about">About</Link></li>
 
         <li><a href="#">Contact</a></li>
 

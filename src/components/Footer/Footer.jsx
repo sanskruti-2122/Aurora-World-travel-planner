@@ -1,6 +1,7 @@
 import "./Footer.css";
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import logo from "../../assets/images/logo.png"; // Change path if needed
+import { Link } from "react-router-dom";
 
 function Footer() {
     return (
@@ -22,7 +23,7 @@ function Footer() {
                     <h3>Quick Links</h3>
 
                     <ul>
-                        <li><a href="#">About</a></li>
+                        <li><Link to="/about">About</Link></li>
                         <li><a href="#">Contact Us</a></li>
                         <li><a href="#">Suggestions</a></li>
                         <li><a href="#">Reviews</a></li>
