@@ -18,11 +18,11 @@
 
 .hero-video{
     width:100%;
-    aspect-ratio:16/9;
+   height: 500px;
     
     display:block;
 
-    object-fit:cover;
+    object-fit:fill;
 
     border-radius:28px;
 

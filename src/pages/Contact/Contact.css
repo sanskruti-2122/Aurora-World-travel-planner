@@ -1,0 +1,246 @@
+/* ===========================
+   Contact Page Only
+=========================== */
+
+.contact-page{
+
+    width:100%;
+    background:#F8FFFD;
+
+    font-family:"Open Sans",sans-serif;
+}
+
+/* ===========================
+   Hero
+=========================== */
+
+/* ===========================
+   Hero Section
+=========================== */
+
+.contact-page .contact-hero{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 35px 0 20px;
+}
+
+.contact-page .contact-hero-image{
+    width: 90%;
+    max-width: 1400px;
+
+    height: 450px;
+
+    object-fit: fill;      /* Shows complete image */
+
+    border-radius: 28px;
+
+    display: block;
+
+    background: #fff;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,.08);
+}
+
+/* ===========================
+   Contact Section
+=========================== */
+
+/* ===========================
+   Contact Info
+=========================== */
+
+.contact-page .contact-section{
+    padding: 40px 0 80px;
+    background: #f7fcfb;
+}
+
+.contact-page .contact-container{
+    width: 88%;
+    max-width: 1300px;
+    margin: auto;
+    text-align: center;
+}
+
+.contact-page .contact-tag{
+    color: #33c6c6;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.contact-page .contact-title{
+    font-family: "Playfair Display", serif;
+    font-size: 60px;
+    color: #16324f;
+    margin-bottom: 18px;
+}
+
+.contact-page .contact-divider{
+    width: 70px;
+    height: 4px;
+    background: #33c6c6;
+    margin: 0 auto 25px;
+    border-radius: 20px;
+}
+
+.contact-page .contact-subtitle{
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+    color: #677786;
+    line-height: 1.8;
+}
+/* ===========================
+   Contact Card
+=========================== */
+
+.contact-page .contact-card{
+    margin-top: 60px;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 30px;
+}
+
+.contact-page .contact-item{
+
+    background: #ffffff;
+
+    border: 2px solid rgba(61, 214, 214, 0.18);
+
+    border-radius: 22px;
+
+    padding: 35px 25px;
+
+    text-align: center;
+
+    transition: all 0.35s ease;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.contact-page .contact-item:hover{
+    transform: translateY(-8px);
+
+    border-color: #39d5d5;
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.10),
+        0 0 20px rgba(57,213,213,.25);
+}
+
+.contact-page .contact-icon{
+    width: 60px;
+    height: 50px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(57, 213, 213, 0.12);
+    border: 2px solid rgba(57, 213, 213, 0.25);
+
+    color: #2ccccc;
+
+    font-size: 34px;
+
+    overflow: hidden;
+}
+
+.contact-page .contact-icon svg {
+    width: 5px;
+    height: 5px;
+
+    display: block;
+}
+.contact-page .contact-item h3{
+
+    font-family: "Playfair Display", serif;
+
+    color: #16324f;
+
+    margin-bottom: 12px;
+
+    font-size: 24px;
+
+}
+
+.contact-page .contact-item p{
+
+    color: #677786;
+
+    line-height: 1.8;
+
+    font-size: 17px;
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:992px){
+
+.contact-page .contact-title{
+
+    font-size:42px;
+
+}
+
+.contact-page .contact-hero-image{
+
+    height:320px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.contact-page .contact-container{
+
+    width:92%;
+
+}
+
+.contact-page .contact-hero-image{
+
+    width:92%;
+
+    height:240px;
+
+}
+
+.contact-page .contact-card{
+
+    padding:28px;
+
+}
+
+.contact-page .contact-item{
+
+    gap:18px;
+
+}
+
+.contact-page .contact-title{
+
+    font-size:34px;
+
+}
+
+.contact-page .contact-subtitle{
+
+    font-size:16px;
+
+}
+
+}

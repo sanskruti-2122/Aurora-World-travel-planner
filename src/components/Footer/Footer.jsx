@@ -23,8 +23,11 @@ function Footer() {
                     <h3>Quick Links</h3>
 
                     <ul>
-                        <li><Link to="/about">About</Link></li>
-                        <li><a href="#">Contact Us</a></li>
+
+        <li><Link to="/about">About</Link></li>
+
+        <li><Link to="/contact">Contact</Link></li>
+
                         <li><a href="#">Suggestions</a></li>
                         <li><a href="#">Reviews</a></li>
                         <li><a href="#">Login</a></li>
